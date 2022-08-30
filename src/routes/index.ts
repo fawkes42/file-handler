@@ -1,7 +1,7 @@
 import { Router, Request, Response, NextFunction } from 'express';
 import { Web3Storage, getFilesFromPath } from 'web3.storage';
 import fs from 'fs';
-import { logError, returnError } from '../lib/ErrorHandler';
+import { returnError } from '../lib/ErrorHandler';
 
 const routes = Router();
 
@@ -43,7 +43,6 @@ routes.use((req: Request, res: Response) => {
     return res.status(404).json({ message: 'Rota não encontrada' });
 });
 
-routes.use(logError);
 routes.use(returnError);
 
 export default routes;
