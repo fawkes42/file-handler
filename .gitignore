@@ -1,0 +1,20 @@
+.DS_Store
+.thumbs.db
+node_modules
+/dist
+scratch
+yarn-debug.log*
+yarn-error.log*
+package-lock.json*
+tmp
+ramais
+.env
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+package-lock.json
